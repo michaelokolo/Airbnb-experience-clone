@@ -1,18 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faStar } from "@fortawesome/fontawesome-free-solid"
 
-function Card(){
+function Card(props){
     return(
         <section className="card">
             <div className="card-container">
                 <div className="card-image">
-                    <img src={require("./images/card-img1.jpg")}/>
+                    <img src={props.img}/>
                     <p className="status">SOLD OUT</p>
                 </div>
                 <div className="card-text">
-                    <p><FontAwesomeIcon icon={faStar} className="star"/> 5.0<span className="gray">(6)USA</span></p>
-                    <p>Life lessons with Katie Zaferes</p>
-                    <p><span className="bold">From $136</span> / person</p>
+                    <p><FontAwesomeIcon icon={faStar} className="star"/> {props.rating}<span className="gray">({props.reviewCount}) {props.Country}</span></p>
+                    <p>{props.title}</p>
+                    <p><span className="bold">From ${props.price}</span> / person</p>
                 </div>
             </div>
         </section>
