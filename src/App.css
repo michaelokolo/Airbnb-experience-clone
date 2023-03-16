@@ -125,19 +125,3 @@ section{
    
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 20px;
-    gap: 20px;
-}
-
-.joke{
-    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
-    border:1px solid rgb(224, 218, 218);
-    padding: 10px;
-    
-}
-.joke p span{
-    font-weight: bold;
-}
