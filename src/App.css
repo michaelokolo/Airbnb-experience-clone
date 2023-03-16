@@ -57,6 +57,11 @@ section{
     line-height: 110%;
 }
 
+.cards-list{
+    display: flex;
+    justify-content: center;
+}
+
 .card-image{
     width: 176px;
     height: 235px;
@@ -123,5 +128,9 @@ section{
     line-height: 110%;
     padding: 0px;
    
+}
+
+.status{
+    font-family: 'Poppins', sans-serif;
 }
 
